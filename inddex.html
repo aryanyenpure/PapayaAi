@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Papaya Ai</title>
+    <!-- Link to Google Font -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1 class="heading">Hello, there</h1> <!-- Main heading of the app -->
+            <h2 class="sub-heading">How can I help you?</h2> <!-- Sub-heading of the app -->
+        </header>
+
+        <ul class="suggestion">
+            <li class="suggestion-item">
+                <p class="text">How to improve watercolor painting techniques?</p>
+                <span class="material-symbols-rounded">draw</span> <!-- Art/Creativity -->
+              </li>
+
+              <li class="suggestion-item">
+                <p class="text">What are healthy meal prep ideas for busy schedules?</p>
+                <span class="material-symbols-rounded">lightbulb</span> <!-- Life hack -->
+              </li>
+
+              <li class="suggestion-item">
+                <p class="text">How to start urban gardening in small spaces?</p>
+                <span class="material-symbols-rounded">explore</span> <!-- Discovery -->
+              </li>
+
+              <li class="suggestion-item">
+                <p class="text">What are basic machine learning concepts for beginners?</p>
+                <span class="material-symbols-rounded">code_blocks</span> <!-- Technology -->
+              </li>
+
+        </ul>
+
+        <div class="chats-container"> <!-- Container for chat messages -->
+        </div>
+
+        <div class="prompt-container">
+
+            <div class="prompt-wrapper">
+
+                <form action="#" class="prompt-form">
+
+                    <input type="text" placeholder="Ask Papaya" class="prompt-input" required>
+                     <!-- Input field for user prompts -->
+                    <div class="prompt-actions">
+
+                     <!-- File upload wrapper-->>
+                        <div class="file-upload-wrapper">
+                            <img src="#" class="file-preview">
+
+                         <input type="file" accept="image/*, .pdf, .txt, .csv"
+                         id="file-input" hidden>
+
+                         <button id="add-file-btn" type="button"
+                         class="material-symbols-rounded">
+                          attach_file </button>
+
+                         <button id="file-icon-btn" type="button" class="file-icon material-symbols-rounded">
+                            description
+                        </button>
+
+                         <button id="cancel-file-btn" type="button"
+                         class="material-symbols-rounded">
+                         close </button>
+
+                        </div>
+                        <button id="send-prompt-btn" class="material-symbols-rounded">arrow_upward</button> 
+                        <button type="button" id="stop-response-btn" class="material-symbols-rounded">stop_circle</button> 
+                        <!-- Button to send the prompt -->
+                    </div>
+                </form>
+                <button id="theme-toggle-btn" class="material-symbols-rounded">light_mode</button> 
+                <button id="delete-chats-btn" class="material-symbols-rounded">delete</button> 
+            </div>
+            <p class="disclaimer-text">AI  can make mistakes. Check important info </p>
+        </div>
+    </div>
+    <script src="Script.js"></script> 
+</body>
+
+</html>
